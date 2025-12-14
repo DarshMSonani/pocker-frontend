@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="Play Teen Patti - India's most popular online card game. Join millions of players and enjoy exciting variations." />
+  <title>Teen Patti Landing</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- HERO + NAV -->
+  <header class="hero" id="home">
+    <nav class="nav">
+      <div class="left">
+        <div class="logo">
+          <img src="./assests/image/mdi_cards-playing.png" alt="Logo" />
+          <span class="logo-text">Teen Patti</span>
+        </div>
+
+        <ul class="menu">
+          <li onclick="window.location.href='#games'">Games</li>
+          <li onclick="window.location.href='#about'">About Us</li>
+          <li onclick="window.location.href='#security'">Security &amp; Fair Play</li>
+          <li onclick="window.location.href='#faq'">FAQ</li>
+          <li onclick="window.location.href='#contact'">Contact &amp; Support</li>
+        </ul>
+
+        <!-- Mobile Sidebar -->
+        <div class="sideBar-overlay" onclick="hideSideBar()"></div>
+        <ul class="sideBar">
+          <li onclick="hideSideBar()" aria-label="Close menu">
+            <i class="fa-solid fa-xmark fa-2xl"></i>
+          </li>
+          <li onclick="navigateAndClose('#games')">Games</li>
+          <li onclick="navigateAndClose('#about')">About Us</li>
+          <li onclick="navigateAndClose('#security')">Security & Fair Play</li>
+          <li onclick="navigateAndClose('#faq')">FAQ</li>
+          <li onclick="navigateAndClose('#contact')">Contact & Support</li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <button class="signup-btn">Sign Up Free</button>
+        <button class="togleButton" onclick="showSideBar()" aria-label="Open menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <div class="hero-left">
+        <div class="hero-star hero-star-top">
+          <img src="./assests/image/white-star.png" alt="Star" />
+        </div>
+        <div class="hero-star hero-star-bottom">
+          <img src="./assests/image/white-star.png" alt="Star" />
+        </div>
+        <p class="eyebrow">Well, you can enjoy</p>
+        <h1>
+          <span class="highlight">KBC – Teen Patti</span><br />
+          pretty much any time
+        </h1>
+        <p class="subtext">
+          KBC – Teen Patti is the most popular online game in India. Join millions of other genuine Teen Patti players
+          on the world's largest multiplayer online three-card poker game and show off your Teen Patti abilities.
+        </p>
+        <button class="play-btn">Play Now</button>
+      </div>
+
+      <div class="hero-right">
+        <!-- Main illustration -->
+        <img src="./assests/image/men.png" alt="Teen Patti Player" class="hero-img" />
+      </div>
+    </section>
+  </header>
+  <!-- VARIANTS SECTION -->
+  <main class="variants" id="games">
+    <h2>PLAY TEEN PATTI IN MANY EXCITING VARIATIONS</h2>
+    <div class="cards">
+      <!-- <div class="dice-decoration dice-1">
+        <img src="./assests/image/diace.png" alt="Dice" />
+      </div> -->
+      <article class="variant-card">
+        <img src="./assests/image/spades.png" alt="Spades" />
+        <h3>Spades</h3>
+        <p>Jump into games instantly with minimal wait time.Experience seamless play with real opponents in
+          real-time.</p>
+      </article>
+      <article class="variant-card">
+        <img src="./assests/image/hearts.png" alt="Hearts" />
+        <h3>Hearts</h3>
+        <p>Jump into games instantly with minimal wait time.Experience seamless play with real opponents in
+          real-time.</p>
+      </article>
+      <article class="variant-card">
+        <img src="./assests/image/clubs.png" alt="Clubs" />
+        <h3>Clubs</h3>
+        <p>Jump into games instantly with minimal wait time.Experience seamless play with real opponents in
+          real-time.</p>
+      </article>
+      <article class="variant-card">
+        <img src="./assests/image/diamond.png" alt="Diamonds" />
+        <h3>Diamonds</h3>
+        <p>Jump into games instantly with minimal wait time.Experience seamless play with real opponents in
+          real-time.</p>
+      </article>
+    </div>
+  </main>
+
+  <!-- PLAYING RULES SECTION -->
+  <section class="rules-section" id="about">
+    <div class="rules-inner">
+      <div class="rules-left">
+        <div class="rules-img-wrapper">
+          <img src="./assests/image/card-dice.png" alt="Cards and Dice" class="rules-img" />
+          <!-- <div class="dice-decoration rules-dice-1">
+            <img src="./assests/image/diace.png" alt="Dice" />
+          </div>
+          <div class="dice-decoration rules-dice-2">
+            <img src="./assests/image/diace.png" alt="Dice" />
+          </div> -->
+        </div>
+      </div>
+
+      <div class="rules-right">
+        <p class="rules-tag">About game</p>
+        <h2>Playing Rules For Teen Patti</h2>
+        <p class="rules-desc">
+          Teen Patti, similar to poker, is really a famous Indian casino card game. It's usually played in a
+          group of three to six people with a 52-card deck sans jokers. Three cards are handed face down to
+          each participant. The boot amount is sent and received by each player before the cards are dealt.
+          The amount was its smallest bet amount that may be put into the pot, which would be the money there
+          in the middle of the table. The pot amount rises as the play progressed, and the winner of that hand
+          wins it. The champion is really the player that stays as in the game to the end of the hand and has
+          the best or highest hand.
+        </p>
+
+        <div class="rules-grid">
+          <div class="rule-card">
+            <h3>PLAYING BLIND</h3>
+            <p>Teen Patti Blinds Are Post-Wagers That Must Be Placed Before Any Cards Are Dealt. The Players
+              Who Sit In The Blind Positions At The Table Pay Them.</p>
+          </div>
+          <div class="rule-card">
+            <h3>SEEN PLAYER</h3>
+            <p>Both Players' Cards Are Disclosed In A Show, And The Person With The Higher-Ranking Hand Won
+              The Pot. The Player Who Requested The Show Loses If The Hands Are Tied.</p>
+          </div>
+          <div class="rule-card">
+            <h3>SLIDE SHOW</h3>
+            <p>A Player Who Has Been Spotted Can Request A Side Show. You Want To Compare Your Cards To The
+              Cards Of The Preceding Player, Which Is Known As A Sideshow. Only If The Preceding Player Is
+              Also A Seen Player And One Or More Other Players Remain In The Game, May You Accomplish
+              This.</p>
+          </div>
+          <div class="rule-card">
+            <h3>PACK</h3>
+            <p>When the user believes their cards combinations aren't powerful enough, they can pack. Though
+              he has the ability may pack before his turn, it is not considered polite.</p>
+          </div>
+          <div class="rule-card">
+            <h3>TIME-OUT</h3>
+            <p>KBC - Teen Patti game with a limited period of time to perform.</p>
+          </div>
+        </div>
+
+        <button class="play-btn rules-play">Play Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREE CHIPS SECTION -->
+  <section class="chips-section">
+    <div class="chips-card">
+      <h2>WHERE CAN I GET FREE CHIPS?</h2>
+      <div class="chips-grid">
+        <div class="chip-item">
+          <img src="./assests/image/chip-icon.png" alt="Initial Chips" />
+          <h3>Initial Chips</h3>
+          <p>Get Up To 10,000 Free Chips When You Install</p>
+        </div>
+        <div class="chip-item">
+          <img src="./assests/image/chip-icon.png" alt="Daily Spinner" />
+          <h3>Daily Spinner</h3>
+          <p>Weekly, You'll Receive Free Extra Chips</p>
+        </div>
+        <div class="chip-item">
+          <img src="./assests/image/chip-icon.png" alt="Daily Reward" />
+          <h3>Daily Reward</h3>
+          <p>Daily, You'll Receive Free Extra Chips</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="features-section">
+    <div class="features-inner">
+      <div class="features-top">
+        <div class="features-heading">
+          <p class="features-tag">FEATURES</p>
+          <h2>KEY FEATURES OF THE TEEN PATTI<br />MOBILE GAME APPLICATION</h2>
+        </div>
+        <div class="features-text">
+          <p>
+            We are the most well-known KBC Teen Patti Game creation studio. We have the finest team of
+            excellent game app developers in the globe, with the best abilities for building a great
+            diversity of mobile game apps for one global clientele.
+          </p>
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <p>The Application is Updated Regularly To Bring New And Interesting Functionality To Users And
+            Gamers, Giving Them A Lot More To Look Forward To.</p>
+        </div>
+        <div class="feature-card">
+          <p>It's critical that the Teen Patti application has an extremely attractive user experience that is
+            simple and quick to use.</p>
+        </div>
+        <div class="feature-card">
+          <p>The game is designed in such a way that several players will be able to play at the same time.
+          </p>
+        </div>
+        <div class="feature-card">
+          <p>The app developers will ensure that the game is enjoyed by the fan base and runs well by using
+            the most up-to-date technology. </p>
+        </div>
+        <div class="feature-card">
+          <p>Publishers may modify or downgrade the game in real-time thanks to cloud technologies.</p>
+        </div>
+        <div class="feature-card">Users will choose the game version of their choice based on their strength and
+          emotions, thanks to the variety of options available.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECURITY & LEGITIMACY SECTION -->
+  <section class="security-section" id="security">
+    <div class="security-inner">
+      <div class="security-left">
+        <img src="./assests/image/gold-cards-chip.png" alt="Security Cards" class="security-img" />
+      </div>
+
+      <div class="security-right">
+        <h2>Security &amp; Legitimacy <span>Highlight</span></h2>
+        <p class="security-desc">
+          We’re committed to transparency and fair play. Our platform uses certified RNG (Random Number
+          Generator) systems, 128-bit SSL encryption, and strict anti-fraud monitoring to keep your gameplay
+          safe.
+        </p>
+
+        <div class="security-grid">
+          <div class="security-item">
+            <div class="security-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div>
+              <p>100% Secure &amp; Legal badge</p>
+            </div>
+          </div>
+
+          <div class="security-item">
+            <div class="security-icon">
+              <i class="fa-solid fa-ban"></i>
+            </div>
+            <div>
+              <p>SSL Encryption</p>
+            </div>
+          </div>
+
+          <div class="security-item">
+            <div class="security-icon">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <div>
+              <p>Anti-Cheat Protected</p>
+            </div>
+          </div>
+
+          <div class="security-item">
+            <div class="security-icon">
+              <i class="fa-solid fa-dice"></i>
+            </div>
+            <div>
+              <p>RNG Certified</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="play-btn security-play">Play Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ / FEATURES ACCORDION SECTION -->
+  <section class="faq-section" id="faq">
+    <div class="faq-inner">
+      <p class="faq-tag">FAQ</p>
+      <h2>KEY FEATURES OF THE TEEN PATTI<br />MOBILE GAME APPLICATION</h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-header">
+            <span>The application is updated regularly to bring new and interesting functionality to users
+              and gamers, giving them a lot more to look forward to.</span>
+            <span class="faq-indicator">+</span>
+          </button>
+          <div class="faq-body">
+            <p>
+              The application is updated regularly to bring new and interesting functionality to users and
+              gamers, giving them a lot more to look forward to.The application is updated regularly to
+              bring new and interesting functionality to users and gamers, giving them a lot more to look
+              forward to.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header">
+            <span>It's critical that the Teen Patti application has an extremely attractive user experience
+              that is simple and quick to use. </span>
+            <span class="faq-indicator">+</span>
+          </button>
+          <div class="faq-body">
+            <p>
+              The app uses the latest technology to ensure smooth performance and an enjoyable experience
+              for all players.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header">
+            <span>The app developers will ensure that the game is enjoyed by the fan base and runs well by
+              using the most up-to-date technology.</span>
+            <span class="faq-indicator">+</span>
+          </button>
+          <div class="faq-body">
+            <p>
+              The Game Is Designed In Such A Way That Several Players Will Be Able To Play At The Same
+              Time.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header">
+            <span>The App Developers Will Ensure That The Game Is Enjoyed By The Fan Base And Runs Well By
+              Using The Most Up-To-Date Technology.</span>
+            <span class="faq-indicator">+</span>
+          </button>
+          <div class="faq-body">
+            <p>
+              The game is built with modern technology to deliver smooth performance and a great
+              experience for players.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header">
+            <span>Publishers may modify or downgrade the game in real-time thanks to cloud
+              technologies.</span>
+            <span class="faq-indicator">+</span>
+          </button>
+          <div class="faq-body">
+            <p>
+              Cloud technology allows publishers to update, modify, or optimize the game in real time
+              without disruption.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header">
+            <span>Users will choose the game version of their choice based on their strength and emotions,
+              thanks to the variety of options available.</span>
+            <span class="faq-indicator">+</span>
+          </button>
+          <div class="faq-body">
+            <p>
+              Multiple game options let users choose versions that match their skill level and mood.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS DESENTRALAND GAMES SECTION -->
+  <section class="about-desent-section">
+    <div class="about-desent-inner">
+      <div class="about-desent-left">
+        <h3>What is Desentraland<br />Games</h3>
+        <p class="about-desent-text">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+          dicta sunt explicabo.
+        </p>
+        <p class="about-desent-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+      </div>
+      <div class="about-desent-right">
+        <div class="about-desent-frame">
+          <img src="./assests/image/woman.png" alt="Host Character" class="about-desent-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="testimonials-section">
+    <div class="testimonials-inner">
+      <h2><span>User</span> Testimonials</h2>
+
+      <div class="testimonial-card">
+        <button class="testimonial-nav prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="testimonial-content">
+          <div class="testimonial-quote-icon">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+          <p class="testimonial-text">
+            Customer support replied in 2 minutes—super helpful! The app runs fast even on my older phone.
+            Definitely sticking with this one.
+          </p>
+          <div class="testimonial-user">
+            <img src="./assests/image/test-user.png" alt="User avatar" />
+            <div>
+              <h3>Dr. Eric S. Cataldi</h3>
+              <p>Sports medicine Expert</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="testimonial-nav next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN COMMUNITY BANNER -->
+  <section class="join-banner-section">
+    <div class="join-banner">
+      <div class="coin-decoration banner-coin-1">
+        <img src="./assests/image/flying-coin.png" alt="Coin" />
+      </div>
+      <div class="coin-decoration banner-coin-2">
+        <img src="./assests/image/flying-coin.png" alt="Coin" />
+      </div>
+      <p class="join-label">
+        <img src="./assests/image/white-star.png" alt="Star" class="join-star" />
+        Join Our Community Now
+        <img src="./assests/image/white-star.png" alt="Star" class="join-star" />
+      </p>
+      <p class="join-text">
+        Be part of India’s fastest-growing Teen Patti platform.Play with thousands of real players every
+        day.Share wins, tips, and fun moments. Sign up today and start your winning journey!
+      </p>
+      <button class="join-btn">Contact Now</button>
+    </div>
+  </section>
+
+  <!-- SUPPORT SECTION -->
+  <section class="support-section" id="contact">
+    <div class="support-inner">
+      <div class="support-heading">
+        <p class="support-tag">Support</p>
+        <h2>Support</h2>
+      </div>
+
+      <form class="support-form">
+        <div class="support-row">
+          <div class="support-field full">
+            <label>Game ID</label>
+            <input type="text" placeholder="Enter Game ID" />
+          </div>
+        </div>
+
+        <div class="support-row">
+          <div class="support-field full">
+            <label>Issue Topic</label>
+            <input type="text" placeholder="Write Your Issue" />
+          </div>
+        </div>
+
+        <div class="support-row">
+          <div class="support-field full">
+            <label>Description</label>
+            <textarea rows="4" placeholder="Write Description"></textarea>
+          </div>
+        </div>
+
+        <div class="support-row">
+          <div class="support-field half">
+            <label>Contact Mail ID</label>
+            <input type="email" placeholder="Enter Your Email ID" />
+          </div>
+          <div class="support-field half">
+            <label>Mobile Number</label>
+            <input type="text" placeholder="Enter Number" />
+          </div>
+        </div>
+
+        <div class="support-row align-right">
+          <button type="submit" class="support-submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-logo-wrapper">
+          <img src="./assests/image/mdi_cards-playing.png" alt="Teen Patti Logo" class="footer-logo-img" />
+          <h3 class="footer-logo">Teen Patti</h3>
+        </div>
+        <p>Trusted by thousands of players. Play legally and securely with real opponents.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Useful</h4>
+        <ul>
+          <li onclick="window.location.href='#games'">Games</li>
+          <li onclick="window.location.href='#about'">About Us</li>
+          <li onclick="window.location.href='#security'">Security &amp; Fair Play</li>
+          <li onclick="window.location.href='#faq'">FAQs</li>
+          <li onclick="window.location.href='#contact'">Contact &amp; Support</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li onclick="window.location.href='#privacy'">Privacy Policy</li>
+          <li onclick="window.location.href='#responsible'">Responsible Gaming</li>
+          <li onclick="window.location.href='#app'">App Download</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Trust Badges</h4>
+        <div class="footer-badges">
+          <img src="./assests/image/badge-1.png" alt="Badge 1" />
+          <img src="./assests/image/badge-2.png" alt="Badge 2" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright © 2025 Teen Patti | All Rights Reserved.</p>
+      <div class="footer-social">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    function showSideBar() {
+      const sidebar = document.querySelector(".sideBar");
+      const overlay = document.querySelector(".sideBar-overlay");
+      const toggleBtn = document.querySelector(".togleButton");
+
+      if (sidebar && overlay && toggleBtn) {
+        sidebar.classList.add("active");
+        overlay.classList.add("active");
+        toggleBtn.setAttribute("aria-expanded", "true");
+        document.body.style.overflow = "hidden"; // Prevent body scroll
+      }
+    }
+
+    function hideSideBar() {
+      const sidebar = document.querySelector(".sideBar");
+      const overlay = document.querySelector(".sideBar-overlay");
+      const toggleBtn = document.querySelector(".togleButton");
+
+      if (sidebar && overlay && toggleBtn) {
+        sidebar.classList.remove("active");
+        overlay.classList.remove("active");
+        toggleBtn.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = ""; // Restore body scroll
+      }
+    }
+
+    function navigateAndClose(hash) {
+      hideSideBar();
+      // Small delay to allow menu to close before navigation
+      setTimeout(() => {
+        window.location.href = hash;
+      }, 100);
+    }
+
+    // Close sidebar on escape key
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        hideSideBar();
+      }
+    });
+
+    // Close sidebar when clicking outside (on overlay)
+    document.addEventListener("click", function (event) {
+      const sidebar = document.querySelector(".sideBar");
+      const overlay = document.querySelector(".sideBar-overlay");
+      const toggleBtn = document.querySelector(".togleButton");
+
+      if (sidebar && sidebar.classList.contains("active")) {
+        if (event.target === overlay || (!sidebar.contains(event.target) && event.target !== toggleBtn && !toggleBtn.contains(event.target))) {
+          hideSideBar();
+        }
+      }
+    });
+
+    document.querySelectorAll(".faq-header").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const item = btn.parentElement;
+        const isActive = item.classList.contains("active");
+
+        document.querySelectorAll(".faq-item").forEach(i => {
+          i.classList.remove("active");
+          i.querySelector(".faq-body").style.maxHeight = null;
+          i.querySelector(".faq-indicator").textContent = "+";
+        });
+
+        if (!isActive) {
+          item.classList.add("active");
+          const body = item.querySelector(".faq-body");
+          body.style.maxHeight = body.scrollHeight + "px";
+          item.querySelector(".faq-indicator").textContent = "–";
+        }
+      });
+    });
+
+    // Open first item on load (for safety after dynamic height)
+    window.addEventListener("load", () => {
+      const first = document.querySelector(".faq-item.active .faq-body");
+      if (first) first.style.maxHeight = first.scrollHeight + "px";
+    });
+  </script>
+</body>
+
+</html>
