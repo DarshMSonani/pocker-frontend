@@ -1060,10 +1060,6 @@ button {
     transition: transform var(--transition-base);
 }
 
-.faq-item.active .faq-indicator {
-    transform: rotate(45deg);
-}
-
 .faq-body {
     padding: 0 var(--spacing-lg);
     max-height: 0;
