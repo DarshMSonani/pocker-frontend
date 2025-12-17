@@ -472,12 +472,11 @@ button {
     z-index: 2;
     transition: background var(--transition-base), transform var(--transition-base);
     -webkit-tap-highlight-color: transparent;
-    display: block;
+    /* display: block; */
     margin: 0 auto;
     /* Center on mobile */
     width: fit-content;
 }
-
 .play-btn:hover,
 .play-btn:focus {
     background: var(--color-primary-hover);
@@ -977,7 +976,7 @@ button {
 .security-play {
     margin: var(--spacing-md) auto 0;
     /* Center on mobile */
-    display: block;
+    /* display: block; */
     width: fit-content;
 }
 
